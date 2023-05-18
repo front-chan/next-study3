@@ -5,6 +5,7 @@ export default function Home() {
         <div>
             <NavBar />
             <h1>Hello</h1>
+            {/* <h1 className="active">Hello</h1> */}
         </div>
     );
 }
