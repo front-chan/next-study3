@@ -15,7 +15,7 @@ module.exports = {
         return [
             {
                 source: "/api/movies",
-                destination: `http://api.themoviedb.org/3/movie/popular?api=key=${API_KEY}`,
+                destination: `http://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
             },
         ];
     },
