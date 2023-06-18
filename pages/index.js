@@ -1,5 +1,5 @@
 import Seo from "../components/Seo";
-import Link from "next/link";
+// import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Home({ results }) {
@@ -9,9 +9,21 @@ export default function Home({ results }) {
     };
 
     return (
-        <div className="container">
+        <div>
             <Seo title="Home" />
-            {results?.map((movie) => (
+            <div className="text-box">
+                <p>
+                    고객님의 독창성과 라이프 스타일에 대해 <br />
+                    마음을 공유하는 것이 가장 중요합니다.
+                </p>
+                <p>우리는 디자인을 사용하여 더 나은 세상을 만듭니다.</p>
+                <br />
+                <p>We design for a better world.</p>
+                <p>Quality Home & Life Style</p>
+            </div>
+            {/* <Image src="/image/glik.png" alt="glik" width={1000} height={600} /> */}
+            <img className="main-img" src="/image/glik.png" alt="glik" />
+            {/* {results?.map((movie) => (
                 // <Link href={`movies/${movie.id}`} key={movie.id}>
                 <div
                     onClick={() => onClick(movie.id, movie.original_title)}
@@ -50,21 +62,21 @@ export default function Home({ results }) {
                     font-size: 18px;
                     text-align: center;
                 }
-            `}</style>
+            `}</style> */}
         </div>
     );
 }
 
 // server에서만 실행됨
-export async function getServerSideProps() {
-    const { results } = await (
-        await fetch("http://localhost:3001/api/movies")
-    )
-        // server부분이라 localhost를 적어주어야 함
-        .json();
-    return {
-        props: {
-            results,
-        },
-    };
-}
+// export async function getServerSideProps() {
+//     const { results } = await (
+//         await fetch("http://localhost:3001/api/movies")
+//     )
+//         // server부분이라 localhost를 적어주어야 함
+//         .json();
+//     return {
+//         props: {
+//             results,
+//         },
+//     };
+// }

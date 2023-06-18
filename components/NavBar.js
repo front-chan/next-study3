@@ -7,8 +7,9 @@ export default function NavBar() {
 
     return (
         <nav>
-            <img src="/vercel.svg" />
-            <div>
+            {/* <img src="/vercel.svg" /> */}
+            <h1>Glik</h1>
+            {/* <div>
                 <Link
                     href="/"
                     className={router.pathname === "/" ? "active" : ""}
@@ -21,8 +22,40 @@ export default function NavBar() {
                 >
                     About
                 </Link>
+            </div> */}
+            <div className="link">
+                <Link
+                    href="/"
+                    className={router.pathname === "/" ? "active" : ""}
+                >
+                    Home
+                </Link>
+                <Link
+                    href="/design"
+                    className={router.pathname === "/design" ? "active" : ""}
+                >
+                    Design
+                </Link>
+                <Link
+                    href="/about"
+                    className={router.pathname === "/about" ? "active" : ""}
+                >
+                    About
+                </Link>
+                <Link
+                    href="/magazine"
+                    className={router.pathname === "/magazine" ? "active" : ""}
+                >
+                    Magazine
+                </Link>
+                <Link
+                    href="/contact"
+                    className={router.pathname === "/contact" ? "active" : ""}
+                >
+                    Contact
+                </Link>
             </div>
-            <style jsx global>{`
+            {/* <style jsx global>{`
                 nav {
                     display: flex;
                     gap: 10px;
@@ -48,7 +81,7 @@ export default function NavBar() {
                     display: flex;
                     gap: 10px;
                 }
-            `}</style>
+            `}</style> */}
         </nav>
     );
 }
