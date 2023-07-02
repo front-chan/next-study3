@@ -68,7 +68,7 @@ export default function About() {
                 </div>
                 <div className="about_section top_margin">
                     <p className="about_title_text">
-                        <span>IT</span> 개발
+                        <span>IT 개발</span> | WEB DEVELOPER
                     </p>
                     <img
                         src="/image/glik_about/it-front.webp"
@@ -80,7 +80,7 @@ export default function About() {
                 </div>
                 <div className="about_section top_margin">
                     <p className="about_title_text">
-                        <span>IT</span> 개발
+                        <span>IT 개발</span> | WEB DEVELOPER
                     </p>
                     <img
                         src="/image/glik_about/it-back.webp"
