@@ -9,20 +9,26 @@ export default function Home({ results }) {
     };
 
     return (
-        <div>
+        <div className="home_image">
             <Seo title="Home" />
             <div className="text-box">
-                <p>
+                <h1>
+                    우리는 디자인을 사용하여
+                    <br />더 나은 세상을 만듭니다.
+                </h1>
+                <span>
                     고객님의 독창성과 라이프 스타일에 대해 <br />
                     마음을 공유하는 것이 가장 중요합니다.
+                </span>
+                <p>
+                    We design for a better world.
+                    <br />
+                    Quality Home & Life Style
                 </p>
-                <p>우리는 디자인을 사용하여 더 나은 세상을 만듭니다.</p>
-                <br />
-                <p>We design for a better world.</p>
-                <p>Quality Home & Life Style</p>
+                <h4>by Glik</h4>
             </div>
             {/* <Image src="/image/glik.png" alt="glik" width={1000} height={600} /> */}
-            <img className="main-img" src="/image/glik.png" alt="glik" />
+            {/* <img className="main-img" src="/image/glik.png" alt="glik" /> */}
             {/* {results?.map((movie) => (
                 // <Link href={`movies/${movie.id}`} key={movie.id}>
                 <div

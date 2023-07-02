@@ -43,6 +43,12 @@ export default function NavBar() {
                     About
                 </Link>
                 <Link
+                    href="/service"
+                    className={router.pathname === "/service" ? "active" : ""}
+                >
+                    Sevice
+                </Link>
+                <Link
                     href="/magazine"
                     className={router.pathname === "/magazine" ? "active" : ""}
                 >

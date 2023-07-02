@@ -49,9 +49,12 @@ button {
 body {
     max-width: 100vw;
     max-height: 100vh;
-    overflow-x: hidden;
-    padding: 10px;
+    /* overflow-x: hidden; */
+    /* padding: 10px; */
     color: rgb(66, 66, 66);
+    /* background-image: url("/image/main/main09.webp");
+    background-position: center;
+    background-size: cover; */
 }
 /* 
 body {
@@ -112,6 +115,47 @@ nav h1 {
     font-weight: bold;
 }
 
+.home_image {
+    /* position: relative;
+    top: 0; */
+    width: 100%;
+    height: 100vh;
+    background-image: url("/image/main/main09.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box {
+    padding: 100px;
+}
+
+.text-box > h1 {
+    color: rgb(66, 66, 66);
+    text-align: left;
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.text-box > span {
+    color: rgb(66, 66, 66);
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.text-box > p {
+    margin-top: 15px;
+    color: rgb(66, 66, 66);
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-box > h4 {
+    margin-top: 20px;
+}
+
 .main-box {
     width: 100%;
     /* height: 1200px; */
@@ -132,12 +176,6 @@ nav h1 {
 .copyright {
     text-align: center;
     line-height: 80px;
-}
-
-.text-box p {
-    text-align: right;
-    font-size: 35px;
-    line-height: 40px;
 }
 
 .card-box {
@@ -297,8 +335,12 @@ label {
     font-size: 18px;
 }
 
+.about_text_description > h1 {
+    margin-bottom: 15px;
+}
+
 .about_text_description > p {
-    line-height: 22px;
+    line-height: 26px;
 }
 
 .about_box {
@@ -341,4 +383,59 @@ label {
 
 .top_margin {
     margin-top: 90px;
+}
+
+.service_box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.service_title {
+    text-align: center;
+    margin: 30px 0 70px 0;
+}
+
+.service_title > h1 {
+    font-size: 38px;
+}
+
+.service_title > p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.service_sub_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 40px;
+}
+
+.sub_sections {
+    background-color: rgb(242, 241, 241);
+    padding: 35px;
+    border-radius: 5px;
+    /* border: 1px solid rgb(66, 66, 66); */
+    /* box-shadow: 2px 2px 2px 2px gray; */
+    width: 270px;
+    height: 270px;
+    padding-top: 58px;
+    /* background-image: url("/image/glik_service/brand.jpg");
+    background-position: center;
+    background-size: cover;
+    color: wheat; */
+}
+
+.sub_sections > h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.sub_sections > p {
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
 }
