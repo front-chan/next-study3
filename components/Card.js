@@ -88,11 +88,9 @@ export default function Card() {
                         as={`/design/${design.id}`}
                     >
                         {/* <Link href={`/design/${design.id}`}> */}
-                        <Image
+                        <img
                             className="card-img"
                             src={`/image/main/main${design.id}.webp`}
-                            width={600}
-                            height={350}
                             alt={`main${design.id}`}
                         />
                     </Link>
