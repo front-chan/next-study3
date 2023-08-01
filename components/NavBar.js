@@ -6,9 +6,12 @@ export default function NavBar() {
     // console.log(router.pathname);
 
     return (
-        <nav>
+        <nav className={router.pathname === "/" ? "nav-home" : null}>
             {/* <img src="/vercel.svg" /> */}
-            <h1>Glik</h1>
+            <div className="main-logo">
+                <h1>글릭 Glik</h1>
+                <p>인테리어 | 건축디자인</p>
+            </div>
             {/* <div>
                 <Link
                     href="/"
@@ -31,16 +34,16 @@ export default function NavBar() {
                     Home
                 </Link>
                 <Link
-                    href="/design"
-                    className={router.pathname === "/design" ? "active" : ""}
-                >
-                    Design
-                </Link>
-                <Link
                     href="/about"
                     className={router.pathname === "/about" ? "active" : ""}
                 >
                     About
+                </Link>
+                <Link
+                    href="/design"
+                    className={router.pathname === "/design" ? "active" : ""}
+                >
+                    Design
                 </Link>
                 <Link
                     href="/service"
@@ -54,12 +57,12 @@ export default function NavBar() {
                 >
                     Magazine
                 </Link>
-                <Link
+                {/* <Link
                     href="/contact"
                     className={router.pathname === "/contact" ? "active" : ""}
                 >
                     Contact
-                </Link>
+                </Link> */}
             </div>
             {/* <style jsx global>{`
                 nav {

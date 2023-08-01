@@ -1,19 +1,19 @@
 import Seo from "../components/Seo";
-// import Link from "next/link";
-import { useRouter } from "next/router";
+import Link from "next/link";
+// import { useRouter } from "next/router";
 
 export default function Home({ results }) {
-    const router = useRouter();
-    const onClick = (id, title) => {
-        router.push(`/movies/${title}/${id}`);
-    };
+    // const router = useRouter();
+    // const onClick = (id, title) => {
+    //     router.push(`/movies/${title}/${id}`);
+    // };
 
     return (
         <div className="home_image">
             <Seo title="Home" />
             <div className="text-box">
                 <h1>
-                    우리는 디자인을 사용하여
+                    우리는 <strong>디자인을</strong> 사용하여
                     <br />더 나은 세상을 만듭니다.
                 </h1>
                 <span>
@@ -25,7 +25,23 @@ export default function Home({ results }) {
                     <br />
                     Quality Home & Life Style
                 </p>
-                <h4>by Glik</h4>
+                <h4>
+                    by <span>Glik</span>
+                </h4>
+                <div className="btn-box">
+                    <Link
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeq7hdtyqDniL4URkykplzU8ej5UcLeKC0EZjNDsvsDhkkTPA/viewform"
+                        target="_blank"
+                    >
+                        견적/상담신청
+                    </Link>
+                    <Link
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfNmWCi-PRHj09HeEbIYPsUQXRj7ukTBk0n3x3pl19X9dwUsQ/viewform"
+                        target="_blank"
+                    >
+                        협업문의
+                    </Link>
+                </div>
             </div>
             {/* <Image src="/image/glik.png" alt="glik" width={1000} height={600} /> */}
             {/* <img className="main-img" src="/image/glik.png" alt="glik" /> */}

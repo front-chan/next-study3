@@ -94,10 +94,10 @@ export default function Card() {
                             alt={`main${design.id}`}
                         />
                     </Link>
-                    <div className="card-text-box">
-                        <h3>{design.title}</h3>
-                        <p>{design.description}</p>
-                    </div>
+                    {/* <div className="card-text-box"> */}
+                    {/* <h3 id="design-title">{design.title}</h3> */}
+                    {/* <p>{design.description}</p> */}
+                    {/* </div> */}
                 </div>
             ))}
         </div>

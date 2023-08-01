@@ -77,9 +77,9 @@ const magazines = [
 
 export default function Magazine() {
     return (
-        <div>
+        <div className="magazine-box">
             <Seo title="Magazine" />
-            <h1 className="magazine-box-title">Magazine</h1>
+            <h1 className="magazine-box-title">Glik Magazine</h1>
             <hr />
             {magazines.map((magazine) => (
                 <div key={magazine.id}>

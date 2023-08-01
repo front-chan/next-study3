@@ -6,7 +6,9 @@ export default function About() {
             <Seo title="About" />
             <div className="about_box">
                 <div className="about_text_description">
-                    <h1>About Glik</h1>
+                    <h1>
+                        About <span>Glik</span>
+                    </h1>
                     <p>
                         글릭은 건축 및 인테리어 디자인 분야의 회사입니다. 고객과
                         함께 계획, 연구, 건설 인테리어 및 내부 아이템 선정과
