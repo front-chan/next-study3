@@ -38,6 +38,10 @@ button {
     padding: 0.5rem 1rem;
     font-weight: bold;
 } */
+/* 
+:root {
+    --random-height: 250px
+} */
 
 * {
     /* background-color: rgb(47, 47, 47); */
@@ -264,8 +268,9 @@ nav {
 }
 
 .card-box {
-    max-width: 1200px;
-    margin: 50px auto 0 auto;
+    width: 90%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
@@ -273,13 +278,16 @@ nav {
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
+    position: relative;
+    height: 1700px;
 }
 
 .card-detail-box {
-    width: 380px;
-    height: auto;
+    width: 400px;
+    /* height: auto; */
     /* margin: 0 auto; */
     padding-top: 20px;
+    /* margin: 0 30px; */
 }
 
 /* .card-detail-box:nth-child(1) {
@@ -305,10 +313,11 @@ nav {
 } */
 
 .card-img {
-    width: 380px;
-    height: auto;
+    width: 400px;
+    /* height: auto; */
     transition: scale 0.5s ease-in-out;
     /* transform: scale(1.1) 2s ease-in-out; */
+    border-radius: 3px;
 }
 
 .card-img:hover {
